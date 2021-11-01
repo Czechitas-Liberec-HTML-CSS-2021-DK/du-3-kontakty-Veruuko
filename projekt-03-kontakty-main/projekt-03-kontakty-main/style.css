@@ -1,10 +1,65 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
 
 body {
-	font-family: sans-serif;
-	font-size: 14px;
+  font-family: sans-serif;
+  font-size: 14px;
 }
 
 /* ---------------------------------------------------- */
+body {
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 2rem;
+}
+
+.kontakty {
+  display: flex;
+  background-color: #e3e3e3;
+  padding: 2rem;
+  gap: 2rem;
+  border-radius: 10px;
+  /*justify-content: space-between; jiná možnost rozdělení boxů */
+}
+
+.foto {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.kontakt {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 2rem;
+  flex-basis: 22%;
+  flex-grow: 1;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ikony {
+  width: 35px;
+  height: 35px;
+  margin: 0.5rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+h2 {
+  margin: 1rem 0;
+}
+
+.odkazy {
+  margin-top: auto;
+}
